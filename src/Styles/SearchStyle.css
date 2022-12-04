@@ -1,0 +1,154 @@
+section {
+    width: 100%;
+    /* max-width: 1400px; */
+    height: 280px;
+  
+    background-image: linear-gradient(
+        to top,
+        rgba(245, 246, 252, 0.267),
+        rgba(31, 40, 51, 0.73)
+      ),
+      url("../Assets/ImgSite/c3Y2mA.webp");
+    background-size: cover;
+    background-position: center, 50%;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  section .leftSideSearch,
+  section .rightSideSearch {
+    width: 24%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  section .rightSideSearch img:nth-child(1),
+  section .rightSideSearch img:nth-child(3)
+  {
+    transform: rotate(-16deg);
+    animation: moveIconRight 5s;
+    position: relative;
+  }
+  section .leftSideSearch img:nth-child(1),
+  section .leftSideSearch img:nth-child(3)
+   {
+    transform: rotate(-16deg);
+    animation: moveIconLeft 5s;
+    position: relative;
+  }
+  
+  section .rightSideSearch img:nth-child(2),
+  section .rightSideSearch img:nth-child(4)
+  {
+    transform: rotate(16deg);
+    animation: moveIconRight 5s;
+    position: relative;
+  }
+  section .leftSideSearch img:nth-child(2),
+  section .leftSideSearch img:nth-child(4)
+   {
+    transform: rotate(16deg);
+    animation: moveIconLeft 5s;
+    position: relative;
+  }
+  
+  
+  @keyframes moveIconLeft {
+    from {
+      left: -300px;
+    }
+  
+    to {
+      left: 0;
+    }
+  }
+  @keyframes moveIconRight {
+    from {
+      right: -300px;
+    }
+  
+    to {
+      right: 0;
+    }
+  }
+  section .leftSideSearch img,
+  section .rightSideSearch img {
+   transform: translateY(20px);
+   transition: all ease-in 500ms;
+  }
+  section .leftSideSearch img:hover,
+  section .rightSideSearch img:hover {
+   transform: translateY(-20px);
+   transition: all ease-in 500ms;
+  }
+  section .middleSearch {
+    margin: 0 32px;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  section .middleSearch h2 {
+    font-size: 1.5rem;
+    color: #1f2833;
+    /* background: url(../Assets/images/c3Y2mA.webp);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    text-align: center;
+  }
+  section .middleSearch h2 span {
+    font-size: 1.5rem;
+    color: #66fcf1;
+  }
+  
+  section .middleSearch form {
+    display: inline-block;
+    width: 100%;
+  }
+  section .middleSearch form .searchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section .middleSearch form .searchBox input {
+    display: inline-block;
+    width: 92%;
+    border: none;
+    border-radius: 1.2rem;
+    background: #fff;
+    height: 3rem;
+    padding-left: 1rem;
+    padding-right: 0;
+    font-size: 1rem;
+  }
+  /* section .middleSearch form .searchBox input:focus{
+    border: 1px solid #66fcf1;
+  } */
+  
+  section .middleSearch Button {
+    color: #66fcf1;
+    border: 2px solid #66fcf1;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: all ease-in 400ms;
+  }
+  /* section .middleSearch Button:hover {
+    background-color: #c5c6c7;
+    border: 2px solid #66fcf1;
+  } */
+  section .middleSearch Button:hover {
+    background-color: #66fcf1;
+    border: 1px solid #1f2833;
+    color: #1f2833;
+    font-weight: bold;
+    box-shadow: 10px 10px 10px rgba(31, 40, 51,0.8);
+    transform: translateY(-8px);
+    transition: all ease-in 400ms;
+  }
+  

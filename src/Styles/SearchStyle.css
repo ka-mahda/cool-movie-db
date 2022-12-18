@@ -1,4 +1,4 @@
-section {
+.searchSection {
     width: 100%;
     /* max-width: 1400px; */
     height: 280px;
@@ -18,38 +18,38 @@ section {
     align-items: center;
   }
   
-  section .leftSideSearch,
-  section .rightSideSearch {
+  .searchSection .leftSideSearch,
+  .searchSection .rightSideSearch {
     width: 24%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  section .rightSideSearch img:nth-child(1),
-  section .rightSideSearch img:nth-child(3)
+  .searchSection .rightSideSearch img:nth-child(1),
+  .searchSection .rightSideSearch img:nth-child(3)
   {
     transform: rotate(-16deg);
     animation: moveIconRight 5s;
     position: relative;
   }
-  section .leftSideSearch img:nth-child(1),
-  section .leftSideSearch img:nth-child(3)
+  .searchSection .leftSideSearch img:nth-child(1),
+  .searchSection .leftSideSearch img:nth-child(3)
    {
     transform: rotate(-16deg);
     animation: moveIconLeft 5s;
     position: relative;
   }
   
-  section .rightSideSearch img:nth-child(2),
-  section .rightSideSearch img:nth-child(4)
+  .searchSection .rightSideSearch img:nth-child(2),
+  .searchSection .rightSideSearch img:nth-child(4)
   {
     transform: rotate(16deg);
     animation: moveIconRight 5s;
     position: relative;
   }
-  section .leftSideSearch img:nth-child(2),
-  section .leftSideSearch img:nth-child(4)
+  .searchSection .leftSideSearch img:nth-child(2),
+  .searchSection .leftSideSearch img:nth-child(4)
    {
     transform: rotate(16deg);
     animation: moveIconLeft 5s;
@@ -75,17 +75,17 @@ section {
       right: 0;
     }
   }
-  section .leftSideSearch img,
-  section .rightSideSearch img {
+  .searchSection .leftSideSearch img,
+  .searchSection .rightSideSearch img {
    transform: translateY(20px);
    transition: all ease-in 500ms;
   }
-  section .leftSideSearch img:hover,
-  section .rightSideSearch img:hover {
+  .searchSection .leftSideSearch img:hover,
+  .searchSection .rightSideSearch img:hover {
    transform: translateY(-20px);
    transition: all ease-in 500ms;
   }
-  section .middleSearch {
+  .searchSection .middleSearch {
     margin: 0 32px;
     width: 35%;
     height: 100%;
@@ -94,29 +94,30 @@ section {
     justify-content: space-around;
     align-items: center;
   }
-  section .middleSearch h2 {
-    font-size: 1.5rem;
+  .searchSection .middleSearch h2 {
+    font-size: 1.2rem;
     color: #1f2833;
+    font-family: 'Rubik', sans-serif;
     /* background: url(../Assets/images/c3Y2mA.webp);
     background-clip: text;
     -webkit-text-fill-color: transparent; */
     text-align: center;
   }
-  section .middleSearch h2 span {
-    font-size: 1.5rem;
+  .searchSection .middleSearch h2 span {
+    font-size: 1.2rem;
     color: #66fcf1;
   }
   
-  section .middleSearch form {
+  .searchSection .middleSearch form {
     display: inline-block;
     width: 100%;
   }
-  section .middleSearch form .searchBox {
+  .searchSection .middleSearch form .searchBox {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  section .middleSearch form .searchBox input {
+  .searchSection .middleSearch form .searchBox input {
     display: inline-block;
     width: 92%;
     border: none;
@@ -126,23 +127,25 @@ section {
     padding-left: 1rem;
     padding-right: 0;
     font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
   }
-  /* section .middleSearch form .searchBox input:focus{
+  /* .searchSection .middleSearch form .searchBox input:focus{
     border: 1px solid #66fcf1;
   } */
   
-  section .middleSearch Button {
+  .searchSection .middleSearch Button {
     color: #66fcf1;
     border: 2px solid #66fcf1;
     font-weight: bold;
     border-radius: 12px;
     transition: all ease-in 400ms;
+    font-family: 'Rubik', sans-serif;
   }
-  /* section .middleSearch Button:hover {
+  /* .searchSection .middleSearch Button:hover {
     background-color: #c5c6c7;
     border: 2px solid #66fcf1;
   } */
-  section .middleSearch Button:hover {
+  .searchSection .middleSearch Button:hover {
     background-color: #66fcf1;
     border: 1px solid #1f2833;
     color: #1f2833;

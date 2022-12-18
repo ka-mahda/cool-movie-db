@@ -10,7 +10,7 @@ import eighth from "../Assets/ImgSite/8.png";
 import SearchIcon from "@mui/icons-material/Search";
 import "../Styles/SearchStyle.css";
 import { useState } from "react";
-// import {useNavigate, Link } from "react-router-dom";
+import {useNavigate, Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 
 
@@ -19,7 +19,7 @@ export default function Search() {
   // const navigate = useNavigate();
 
   return (
-    <section>
+    <section className="searchSection">
       <div className="leftSideSearch">
         <img src={first} width="52px" height="52px" alt="" />
         <img src={second} width="52px" height="52px" alt="" />

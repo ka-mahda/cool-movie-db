@@ -22,16 +22,18 @@ export default function MovieSliderCarousel(props) {
 
   if (loading) return <CircularProgress />;
   if (hasError) return <Alert severity="hasError">{hasError}</Alert>;
-
+console.log(data);
   return (
     <MovieSliderCarouselStyle>
       <h3 className="titleSlider">{props.title}</h3>
       <section className="swiper-container">
-        <Swiper
+       
+          <Swiper
           modules={[Navigation, Pagination]}
           slidesPerView={4}
           spaceBetween={0}
           loop={true}
+    
           navigation={true}
           pagination={{
             dynamicBullets: true,
@@ -41,11 +43,11 @@ export default function MovieSliderCarousel(props) {
           }}
           className="mySwiper"
         >
-          {availibilityDataRecieved &&
-            data.results.map((movie) => {
+          
+            {availibilityDataRecieved && data.results.map((movie) => {
               return (
-                <>
-                  <SwiperSlide key={movie.id} className="swiperSlide">
+              
+                <SwiperSlide key={movie.id} className="swiperSlide">
   
                 {" "}
                 <MovieCardDesign
@@ -54,19 +56,16 @@ export default function MovieSliderCarousel(props) {
                   overview={movie.overview}
                   rating={movie.vote_average}
                   poster={movie.poster_path}
-                  genre={movie.genre_ids[0]}
+                  // genre={movie.genre_ids[0]}
                   id={movie.id}
                   category="movies"
                   group="movie"
                 /> 
               </SwiperSlide>
-                </>
+            
               );
             })}
-          {/* <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide> */}
+     
         </Swiper>
       </section>
     </MovieSliderCarouselStyle>

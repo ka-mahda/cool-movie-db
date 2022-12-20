@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 let MovieSliderCarouselStyle = styled.section`
 width : 100%;
-height : 1000px;
+height : 800px;
 background-color: #1f2833;
 margin: 0px;
-padding:8px 24px;
+padding:0px 16px;
 display:flex;
 justify-content: space-evenly;
 align-items: center;
@@ -18,8 +18,7 @@ flex-direction:column;
     color:#66fcf1;
 }
 .swiper-container{
-  padding:60px 40px 0px;
-  
+  padding:0px 40px 0px;
   display: flex;
   width:100%;
 }
@@ -34,15 +33,10 @@ flex-direction:column;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.swiper-container .swiper-wrapper {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  width:100%;
  
 }
+
+
 
 .swiper-container .swiper-button-prev,
 .swiper-container .swiper-button-next {
@@ -51,6 +45,17 @@ flex-direction:column;
   height: 100px !important;
   top:138px;
 }
+
+.swiper-container .swiper-button-prev{
+left:0px;
+right:auto;
+}
+.swiper-container .swiper-button-next{
+  right:0px;
+  left:auto;
+}
+
+
 .swiper-pagination-bullet {
   background:#fff;
 }

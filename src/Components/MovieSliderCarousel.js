@@ -82,26 +82,16 @@ let url="https://api.nytimes.com/svc/movies/v2/reviews/search.json";
                   overview={movie.overview}
                   rating={movie.vote_average}
                   poster={movie.poster_path}
-                  // genre={movie.genre_ids[0]}
+                  genreOne={movie.genre_ids[0]}
+                  genreTwo={movie.genre_ids[1]}
                   id={movie.id}
                   category="movies"
                   group="movie"
                 /> 
-                {/* <MovieCardDesign
-                  title={movie.title}
-                  year={movie.release_date.slice(0,4)}
-                  overview={movie.overview}
-                  rating={movie.vote_average}
-                  poster={movie.poster_path}
-                  // genre={movie.genre_ids[0]}
-                  id={movie.id}
-                  category="movies"
-                  group="movie"
-                />  */}
+              
               </SwiperSlide>
             
               );
-              console.log(movie.release_date.slice(0,4))
             })}
      
         </Swiper>

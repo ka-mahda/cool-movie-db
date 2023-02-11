@@ -1,7 +1,7 @@
 import React from "react";
 import CardStyle from "../Styles/CardStyle";
 import { generalPosterPath } from "../API/Constant";
-// import Genre from "./Genres";
+import Genre from "./Genres";
 import { CircularProgress } from "@mui/material";
 
 export default function MovieCardDesign(props) {
@@ -24,7 +24,12 @@ export default function MovieCardDesign(props) {
 
         <div className="rating">
           <CircularProgress value={props.rating} text={props.rating + "/10"} />
+          <div className="genres">
+          <Genre id={props.genreOne} group={props.group} />
+          <Genre id={props.genreTwo} group={props.group} />
         </div>
+        </div>
+       
       </div>
     </CardStyle>
   );

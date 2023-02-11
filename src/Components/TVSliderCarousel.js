@@ -49,7 +49,8 @@ export default function TVSliderCarousel(props) {
                       overview={tv.overview}
                       rating={tv.vote_average}
                       poster={tv.poster_path}
-                      genre={tv.genre_ids[0]}
+                      genreOne={tv.genre_ids[0]}
+                      genreTwo={tv.genre_ids[1]}
                       id={tv.id}
                       group="tv"
                     />

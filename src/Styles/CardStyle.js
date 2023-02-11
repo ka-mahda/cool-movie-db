@@ -88,7 +88,24 @@ position:relative
   }
   .overview .rating {
     margin:0 auto;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color:#45a29e;
+    border-radius:12px;
+    padding:0.5rem;
+    margin-top:0.5rem;
+
   }
+  .genres {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    padding: 0 1rem;
+    color:#fff;
+    overflow: hidden;
+    text-overflow: "-";
+}
 
 `;
 

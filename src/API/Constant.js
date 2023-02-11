@@ -9,7 +9,6 @@ const popularMovie = `${baseApiUrl}/movie/popular?api_key=${apiKey}&language=en-
 const upcomingMovie = `${baseApiUrl}/movie/upcoming?api_key=${apiKey}&language=en-US`;
 const topRatedMovie=`${baseApiUrl}/movie/top_rated?api_key=${apiKey}&language=en-US`;
 const nowPlayingMovie=`${baseApiUrl}/movie/now_playing?api_key=${apiKey}&language=en-US`;
-const genresMovie = `${baseApiUrl}/genre/movie/list?api_key=${apiKey}`;
 const latestMovie=`${baseApiUrl}/movie/latest?api_key=${apiKey}&language=en-US`;
 const trendingMovie=`${baseApiUrl}/trending/all/week?api_key=${apiKey}`;
 
@@ -17,7 +16,6 @@ const trendingMovie=`${baseApiUrl}/trending/all/week?api_key=${apiKey}`;
 const popularTV = `${baseApiUrl}/tv/popular?api_key=${apiKey}&language=en-US`;
 const onAirTV=`${baseApiUrl}/tv/on_the_air?api_key=${apiKey}&language=en-US`;
 const latestTV = `${baseApiUrl}/tv/latest?api_key=${apiKey}&language=en-US`;
-const genresTV = `${baseApiUrl}/genre/tv/list?api_key=${apiKey}`;
 const topRatedTV=`${baseApiUrl}/tv/top_rated?api_key=${apiKey}&language=en-US`;
 
 
@@ -39,14 +37,12 @@ export {
   popularMovie,
   topRatedMovie,
   nowPlayingMovie,
-  genresMovie,
   latestMovie,
   trendingMovie,
   popularTV,
   upcomingMovie,
   onAirTV,
   latestTV,
-  genresTV,
   topRatedTV,
   generalPosterPath,
   generalProfilePath,

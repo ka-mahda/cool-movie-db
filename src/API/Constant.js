@@ -28,8 +28,8 @@ const generalBdPath = "http://image.tmdb.org/t/p/original";
 const generalLogoPath = "https://image.tmdb.org/t/p/w45";
 const generalStillPath = "http://image.tmdb.org/t/p/w300";
 
-//search url
-// const searchUrl=`${baseApiUrl}/search/multi?api_key=${apiKey}&language=en-US&page=${pageOfSearch}&include_adult=false`;
+
+
 
 export {
   apiKey,
@@ -49,5 +49,4 @@ export {
   generalBdPath,
   generalLogoPath,
   generalStillPath,
-  // searchUrl
 };

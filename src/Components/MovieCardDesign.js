@@ -3,10 +3,12 @@ import CardStyle from "../Styles/CardStyle";
 import { generalPosterPath } from "../API/Constant";
 import Genre from "./Genres";
 import { CircularProgress } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function MovieCardDesign(props) {
   return (
     <CardStyle>
+      <Link to={`/${props.category}/${props.title||props.name}/${props.id}`}>
       <div className="posterNameMovie">
         <img
           src={props.poster ? generalPosterPath + props.poster : "noPoster"}
@@ -18,6 +20,7 @@ export default function MovieCardDesign(props) {
           {props.title} ({props.year})
         </h4>
       </div>
+      </Link>
 
       <div className="overview">
         <p>{props.overview}</p>

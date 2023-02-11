@@ -6,9 +6,9 @@ import SwiperCore, { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
-import Button from "@mui/material/Button";
 import { CircularProgress, Alert } from "@mui/material";
 import Search from "./Search";
+import { Link } from "react-router-dom";
 
 SwiperCore.use([Autoplay]);
 
@@ -18,7 +18,7 @@ export default function Hero(props) {
   if (loading) return <CircularProgress />;
   if (hasError) return <Alert severity="hasError">{hasError}</Alert>;
 
-  console.log(data);
+  
   return (
     <div className="hero">
       <div className="description">
@@ -39,14 +39,11 @@ export default function Hero(props) {
             </span><br/>
             Go ahead and find what you want.
           </span>
-        
-          {/* <Button className="button" variant="outlined">
-            {" "}
-            more info about us!
-          </Button> */}
+
           <Search />
         </div>
       </div>
+     
       <div className="trending">
         <Swiper
           spaceBetween={30}
@@ -62,13 +59,18 @@ export default function Hero(props) {
             data.results.map((movie) => {
               let src = generalPosterPath + movie.poster_path;
               return (
+
                 <SwiperSlide key={movie.id} className="swiperSlide">
-                  <img height="600px" src={src} id={movie.id} />
+                   <Link to={`/${movie.title||movie.name}/${movie.id}`}>
+                   <img height="600px" src={src} id={movie.id} />
+                   </Link>
+                  
                 </SwiperSlide>
               );
             })}
         </Swiper>
       </div>
+     
     </div>
   );
 }

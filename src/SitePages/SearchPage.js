@@ -39,9 +39,11 @@ export default function ResultOfSearch() {
                     overview={resultSearch.overview}
                     rating={resultSearch.vote_average + "/10"}
                     poster={resultSearch.poster_path}
+                    //genreOne={resultSearch?.genre_ids[0]}
+                    //genreTwo={resultSearch?.genre_ids[1]}
                     group={resultSearch.media_type === "movie" ? "movie" : "tv"}
                     category={
-                      resultSearch.media_type === "movie" ? "movies" : "tv"
+                      resultSearch.media_type === "movie" ? "movie" : "tv"
                     }
                   />
                 </div>

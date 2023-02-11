@@ -53,6 +53,7 @@ export default function TVSliderCarousel(props) {
                       genreTwo={tv.genre_ids[1]}
                       id={tv.id}
                       group="tv"
+                      category="tv"
                     />
                   </SwiperSlide>
                 </>

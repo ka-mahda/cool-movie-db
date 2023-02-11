@@ -25,7 +25,7 @@ position:relative
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-item: center;
+    align-items: center;
     width: 100%;
   }
   .posterNameMovie img {
@@ -68,32 +68,28 @@ position:relative
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-item: center;
+    align-items: center;
     width: 100%;
     height:40%;
   }
+  
   .overview p {
     font-size: 0.8rem;
     font-weight: 400;
     color: #fff;
-    height: 45%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box !important;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;
-
     text-align: justify;
     text-justify: inter-character;
-
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
   }
   .overview .rating {
-   margin: auto;
-   position:absolute;
-   bottom: -35%;
-   right: 38%;
+    margin:0 auto;
   }
+
 `;
 
 export default CardStyle;

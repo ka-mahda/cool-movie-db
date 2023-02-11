@@ -3,17 +3,14 @@ import TVCardDesign from "./TVCardDesign";
 import useFetch from "../API/FetchUrl";
 import { CircularProgress, Alert } from "@mui/material";
 
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import MovieSliderCarouselStyle from "../Styles/MovieSliderCarouselStyle";
 
-
-
 SwiperCore.use([Navigation, Pagination]);
 
 export default function TVSliderCarousel(props) {
-//   Fetching Data
+  //   Fetching Data
   const { data, loading, hasError } = useFetch(props.url);
   let availibilityDataRecieved = !loading && !hasError && !!data;
 
@@ -43,30 +40,25 @@ export default function TVSliderCarousel(props) {
               return (
                 <>
                   <SwiperSlide key={tv.id} className="swiperSlide">
-  
-                {" "}
-                <TVCardDesign
-                  title={tv.title}
-                  year={tv.first_air_date.slice(0, 4)}
-                  overview={tv.overview}
-                  rating={tv.vote_average}
-                  poster={tv.poster_path}
-                  genre={tv.genre_ids[0]}
-                  id={tv.id}
-                  
-                  group="tv"
-                /> 
-              </SwiperSlide>
+                    {" "}
+                    <TVCardDesign
+                      title={tv.name}
+                      year={new Date(tv.first_air_date)
+                        .getFullYear()
+                        .toString()}
+                      overview={tv.overview}
+                      rating={tv.vote_average}
+                      poster={tv.poster_path}
+                      genre={tv.genre_ids[0]}
+                      id={tv.id}
+                      group="tv"
+                    />
+                  </SwiperSlide>
                 </>
               );
             })}
-       
         </Swiper>
       </section>
     </MovieSliderCarouselStyle>
   );
 }
-
-
-
-

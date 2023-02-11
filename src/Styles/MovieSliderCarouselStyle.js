@@ -72,17 +72,7 @@ right:auto;
 export default MovieSliderCarouselStyle;
 
 
-// .swiper{
-//     width: 100%;
-//     height: 100%;
-//     display: flex;
-//     justify-content: center;
-// }
-// .swiper-slide{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center; 
-// }
+
 
 
 

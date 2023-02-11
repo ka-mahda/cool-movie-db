@@ -2,13 +2,19 @@ import React from "react";
 import MovieCardDesign from "./MovieCardDesign";
 import useFetch from "../API/FetchUrl";
 import { CircularProgress, Alert } from "@mui/material";
-
 import SwiperCore, { Pagination,Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
-
 import MovieSliderCarouselStyle from "../Styles/MovieSliderCarouselStyle";
+
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+
+import { popularMovie, popularTV} from "../API/Constant";
+
 
 
 
@@ -16,16 +22,36 @@ import MovieSliderCarouselStyle from "../Styles/MovieSliderCarouselStyle";
 SwiperCore.use([Navigation, Pagination]);
 
 export default function MovieSliderCarousel(props) {
+ 
   //Fetching Data
   const { data, loading, hasError } = useFetch(props.url);
   let availibilityDataRecieved = !loading && !hasError && !!data;
-
+// use state of radiogroup
+  // let [action, setAction] = useState("");
+  // const handleChange = (e) => {
+  //     setAction(e.target.value);
+  //   }
+  
   if (loading) return <CircularProgress />;
   if (hasError) return <Alert severity="hasError">{hasError}</Alert>;
 console.log(data);
+let url="https://api.nytimes.com/svc/movies/v2/reviews/search.json";
+
   return (
     <MovieSliderCarouselStyle>
       <h3 className="titleSlider">{props.title}</h3>
+      {/* <FormControl>
+      <RadioGroup
+        aria-labelledby="demo-radio-buttons-group-label"
+        defaultValue="movie"
+        name="radio-buttons-group"
+      >
+        <FormControlLabel value="movie" control={<Radio />} label="movie"  onChange={handleChange} checked={action === 'movie'}/>
+        <FormControlLabel value="tv" control={<Radio />} label="tv"  onChange={handleChange} checked={action === 'tv'}/>
+     
+      </RadioGroup>
+    </FormControl> */}
+
       <section className="swiper-container">
        
           <Swiper
@@ -46,11 +72,22 @@ console.log(data);
           
             {availibilityDataRecieved && data.results.map((movie) => {
               return (
-              
+             
                 <SwiperSlide key={movie.id} className="swiperSlide">
   
                 {" "}
-                <MovieCardDesign
+                 <MovieCardDesign
+                  title={movie.title}
+                  year={new Date(movie.release_date).getFullYear().toString()}
+                  overview={movie.overview}
+                  rating={movie.vote_average}
+                  poster={movie.poster_path}
+                  // genre={movie.genre_ids[0]}
+                  id={movie.id}
+                  category="movies"
+                  group="movie"
+                /> 
+                {/* <MovieCardDesign
                   title={movie.title}
                   year={movie.release_date.slice(0,4)}
                   overview={movie.overview}
@@ -60,10 +97,11 @@ console.log(data);
                   id={movie.id}
                   category="movies"
                   group="movie"
-                /> 
+                />  */}
               </SwiperSlide>
             
               );
+              console.log(movie.release_date.slice(0,4))
             })}
      
         </Swiper>

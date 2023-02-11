@@ -1,0 +1,113 @@
+.searchContainer{
+  width: 100%;
+  height: 280px;
+  background-image: linear-gradient(
+        to top,
+        rgba(245, 246, 252, 0.267),
+        rgba(31, 40, 51, 0.73)
+      ),
+      url("../Assets/ImgSite/c3Y2mA.webp");
+      background-size: cover;
+    background-position: center, 50%; 
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+     
+.searchContainer .leftSideSearchContainer,.searchContainer .rightSideSearchContainer{
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+  .searchContainer .rightSideSearchContainer img:nth-child(1),
+  .searchContainer .rightSideSearchContainer img:nth-child(3)
+  {
+    transform: rotate(-16deg);
+    animation: moveIconRight 5s;
+    position: relative;
+  }
+  .searchContainer .leftSideSearchContainer img:nth-child(1),
+  .searchContainer .leftSideSearchContainer img:nth-child(3)
+   {
+    transform: rotate(-16deg);
+    animation: moveIconLeft 5s;
+    position: relative;
+  }
+  
+  .searchContainer .rightSideSearchContainer img:nth-child(2),
+  .searchContainer .rightSideSearchContainer img:nth-child(4)
+  {
+    transform: rotate(16deg);
+    animation: moveIconRight 5s;
+    position: relative;
+  }
+  .searchContainer .leftSideSearchContainer img:nth-child(2),
+  .searchContainer .leftSideSearchContainer img:nth-child(4)
+   {
+    transform: rotate(16deg);
+    animation: moveIconLeft 5s;
+    position: relative;
+  }
+  
+  
+  @keyframes moveIconLeft {
+    from {
+      left: -300px;
+    }
+  
+    to {
+      left: 0;
+    }
+  }
+  @keyframes moveIconRight {
+    from {
+      right: -300px;
+    }
+  
+    to {
+      right: 0;
+    }
+  }
+  .searchContainer .leftSideSearchContainer img,
+  .searchContainer .rightSideSearchContainer img {
+   transform: translateY(20px);
+   transition: all ease-in 500ms;
+  }
+  .searchContainer .leftSideSearchContainer img:hover,
+  .searchContainer .rightSideSearchContainer img:hover {
+   transform: translateY(-20px);
+   transition: all ease-in 500ms;
+  } 
+  .searchContainer .middleSearchContainer {
+    margin: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+  } 
+   .searchContainer .middleSearchContainer h2 {
+    width: 100%;
+    font-size: 1.2rem;
+    color: #1f2833;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;} 
+    /* background: url(../Assets/images/c3Y2mA.webp);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  
+  
+   .searchContainer .middleSearchContainer h2 span {
+    font-size: 1.2rem;
+    color: #66fcf1;
+  } 
+   .searchContainer .middleSearchContainer .searchSectionComponent{
+  padding-left: 7%;
+  }
+  

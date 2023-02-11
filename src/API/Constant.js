@@ -11,6 +11,7 @@ const topRatedMovie=`${baseApiUrl}/movie/top_rated?api_key=${apiKey}&language=en
 const nowPlayingMovie=`${baseApiUrl}/movie/now_playing?api_key=${apiKey}&language=en-US`;
 const genresMovie = `${baseApiUrl}/genre/movie/list?api_key=${apiKey}`;
 const latestMovie=`${baseApiUrl}/movie/latest?api_key=${apiKey}&language=en-US`;
+const trendingMovie=`${baseApiUrl}/trending/all/week?api_key=${apiKey}`;
 
 // urls tv
 const popularTV = `${baseApiUrl}/tv/popular?api_key=${apiKey}&language=en-US`;
@@ -23,11 +24,14 @@ const topRatedTV=`${baseApiUrl}/tv/top_rated?api_key=${apiKey}&language=en-US`;
 
 // urls general
 
-const generalPosterPath = "http://image.tmdb.org/t/p/w342";
+const generalPosterPath = "http://image.tmdb.org/t/p/w400";
 const generalProfilePath = "http://image.tmdb.org/t/p/w185";
 const generalBdPath = "http://image.tmdb.org/t/p/original";
 const generalLogoPath = "https://image.tmdb.org/t/p/w45";
 const generalStillPath = "http://image.tmdb.org/t/p/w300";
+
+//search url
+// const searchUrl=`${baseApiUrl}/search/multi?api_key=${apiKey}&language=en-US&page=${pageOfSearch}&include_adult=false`;
 
 export {
   apiKey,
@@ -37,6 +41,7 @@ export {
   nowPlayingMovie,
   genresMovie,
   latestMovie,
+  trendingMovie,
   popularTV,
   upcomingMovie,
   onAirTV,
@@ -48,4 +53,5 @@ export {
   generalBdPath,
   generalLogoPath,
   generalStillPath,
+  // searchUrl
 };

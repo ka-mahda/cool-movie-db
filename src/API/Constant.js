@@ -30,7 +30,6 @@ const generalStillPath = "http://image.tmdb.org/t/p/w300";
 
 
 
-
 export {
   apiKey,
   baseApiUrl,

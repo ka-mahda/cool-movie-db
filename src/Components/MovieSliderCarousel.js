@@ -8,12 +8,12 @@ import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
 import MovieSliderCarouselStyle from "../Styles/MovieSliderCarouselStyle";
 
-import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
+// import Radio from '@mui/material/Radio';
+// import RadioGroup from '@mui/material/RadioGroup';
+// import FormControlLabel from '@mui/material/FormControlLabel';
+// import FormControl from '@mui/material/FormControl';
 
-import { popularMovie, popularTV} from "../API/Constant";
+// import { popularMovie, popularTV} from "../API/Constant";
 
 
 
@@ -34,8 +34,8 @@ export default function MovieSliderCarousel(props) {
   
   if (loading) return <CircularProgress />;
   if (hasError) return <Alert severity="hasError">{hasError}</Alert>;
-console.log(data);
-let url="https://api.nytimes.com/svc/movies/v2/reviews/search.json";
+
+// let url="https://api.nytimes.com/svc/movies/v2/reviews/search.json";
 
   return (
     <MovieSliderCarouselStyle>
@@ -85,7 +85,7 @@ let url="https://api.nytimes.com/svc/movies/v2/reviews/search.json";
                   genreOne={movie.genre_ids[0]}
                   genreTwo={movie.genre_ids[1]}
                   id={movie.id}
-                  category="movies"
+                  category="movie"
                   group="movie"
                 /> 
               

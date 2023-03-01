@@ -1,0 +1,31 @@
+.castContainer{
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.castContainer img {
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  .castDescription {
+    transform:translateY(-0.5rem);
+    text-align: center;
+    padding: 8px;
+    max-width: 200px;
+    background-color: #45a29e;
+    border-radius: 8px;
+  }
+  
+  .castName {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #c5c6c7;
+  }
+  
+  .castRole {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+  }

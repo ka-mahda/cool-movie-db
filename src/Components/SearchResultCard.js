@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function SearchResultCard(props) {
   return (
     <CardStyle>
-       <Link to={`/${props.title||props.name}/${props.id}`}>
+       <Link to={`/${props.category}/${props.id}`}>
       <div className="posterNameMovie">
         <img
           src={props.poster ? generalPosterPath + props.poster : "noPoster"}

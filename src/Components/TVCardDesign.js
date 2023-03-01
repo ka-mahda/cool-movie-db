@@ -2,13 +2,14 @@ import React from "react";
 import CardStyle from "../Styles/CardStyle";
 import { generalPosterPath } from "../API/Constant";
  import Genre from "./Genres";
-import { CircularProgress } from "@mui/material";
+ import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import { Link } from "react-router-dom";
 
 export default function TVCardDesign(props) {
   return (
     <CardStyle>
-      <Link to={`/${props.category}/${props.title||props.name}/${props.id}`}>
+      <Link to={`/${props.category}/${props.id}`}>
       <div className="posterNameMovie">
         <img
           src={props.poster ? generalPosterPath + props.poster : "noPoster"}
@@ -26,7 +27,7 @@ export default function TVCardDesign(props) {
         <p>{props.overview}</p>
 
         <div className="rating">
-          <CircularProgress value={props.rating} text={props.rating + "/10"} />
+        <CircularProgressbar className="circularRating" maxValue={10} minValue={0} value={props.rating} text={props.rating.toFixed(1) + "/10"} />
           <div className="genres">
           <Genre id={props.genreOne} group={props.group} />
           <Genre id={props.genreTwo} group={props.group} />

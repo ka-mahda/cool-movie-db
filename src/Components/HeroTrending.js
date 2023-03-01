@@ -61,7 +61,7 @@ export default function Hero(props) {
               return (
 
                 <SwiperSlide key={movie.id} className="swiperSlide">
-                   <Link to={`/${movie.title||movie.name}/${movie.id}`}>
+                   <Link to={`/movie/${movie.id}`}>
                    <img height="600px" src={src} id={movie.id} />
                    </Link>
                   

@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 let FooterStyle = styled.footer`
 width : 100%;
-height : 280px;
-background-image: linear-gradient(to right, #45a29e, #66fcf1);
+height : 200px;
+background-color:#66fcf1;
 margin: 0px;
 padding: 0 24px;
 display:flex;
@@ -42,6 +42,26 @@ align-items: center;
     align-items:center;
     justify-content: space-between;
 }
+.leftSideFooter{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+.leftSideFooter h3{
+    font-size:1.2rem;
+    color:#1f2833;
+    margin-bottom:1rem;
+    font-weight:bold; 
+}
+.leftSideFooter a{
+    font-size:1rem;
+    font-weight:600; 
+    color:#45a29e;
+    text-align:left; 
+}
+
 `;
 
 

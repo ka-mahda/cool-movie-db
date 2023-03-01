@@ -16,12 +16,12 @@ export default function Mainpage() {
   return (
     <>
       <Hero />
-      <MovieSliderCarousel url={popularMovie} title="popular Movies " />
-      <TVSliderCarousel url={popularTV} title="popular tv " />
-      <MovieSliderCarousel url={nowPlayingMovie} title="latest Movies " />
-      <TVSliderCarousel url={onAirTV} title="on Air TV " />
-      <MovieSliderCarousel url={topRatedMovie} title="toprated Movies " />
-      <TVSliderCarousel url={topRatedTV} title="top rated tv " />
+      <MovieSliderCarousel url={popularMovie} title="Popular Movies " />
+      <TVSliderCarousel url={popularTV} title="Popular TVs " />
+      <MovieSliderCarousel url={nowPlayingMovie} title="Latest Movies " />
+      <TVSliderCarousel url={onAirTV} title="On Air TVs " />
+      <MovieSliderCarousel url={topRatedMovie} title="Top Rated Movies " />
+      <TVSliderCarousel url={topRatedTV} title="Top Rated TVs " />
     </>
   );
 }

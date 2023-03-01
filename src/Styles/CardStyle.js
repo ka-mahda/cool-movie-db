@@ -7,12 +7,12 @@ position:relative
   flex-direction: column;
   justify-content: start;
   align-item: center;
-  width: 240px;
+  width: 220px;
   background: transparent;
   padding: 0 20px;
   margin: 3.8rem 0px 0px;
   transition: 0.6s;
-  height:480px;
+  height:500px;
 
   :hover {
     background-color: rgba(69, 162, 158, 0.35);
@@ -34,8 +34,8 @@ position:relative
     border: 8px solid #66fcf1;
     z-index: 10;
     overflow: hidden;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     transition: 0.6s;
   }
   .posterNameMovie h4 {
@@ -95,8 +95,23 @@ position:relative
     border-radius:12px;
     padding:0.5rem;
     margin-top:0.5rem;
-
+    width:90%;
   }
+  .overview .rating .circularRating{
+    width:32%;
+  }
+  .CircularProgressbar-trail {
+    stroke: #fff;
+  }
+  .CircularProgressbar-path {
+    stroke: #66fcf1;
+  }
+  .CircularProgressbar-text {
+    fill: #66fcf1;
+    font-size: 1.5rem;
+  }
+
+
   .genres {
     display: flex;
     flex-direction:column;
@@ -105,8 +120,12 @@ position:relative
     color:#fff;
     overflow: hidden;
     text-overflow: "-";
+    width:64%;
+    font-size:0.8rem;
 }
-
+.genres a::before{
+  content: "◈";
+}
 `;
 
 export default CardStyle;

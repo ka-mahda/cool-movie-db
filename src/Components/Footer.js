@@ -1,16 +1,8 @@
 import React from "react";
-import HeaderStyle from "../Styles/HeaderStyle";
-// import { Link } from "react-router-dom";
 import logoB from "../Assets/LogoSite/3P.png";
-import logoShort from "../Assets/LogoSite/4P.png";
 import github from "../Assets/svg/icons8-github-squared.svg";
 import telegram from "../Assets/svg/icons8-telegram-app.svg";
 import gmail from "../Assets/svg/icons8-mail.svg";
-import tmdb from "../Assets/tmdbLogo/tmdbLogo.svg";
-
-import ColorLensOutlinedIcon from "@mui/icons-material/ColorLensOutlined";
-import WidgetsRoundedIcon from "@mui/icons-material/WidgetsRounded";
-// import { Link } from "react-router-dom";
 import FooterStyle from "../Styles/FooterStyle";
 
 export default function Footer() {
@@ -18,20 +10,22 @@ export default function Footer() {
     <FooterStyle>
       <div className="leftSideFooter">
         <h3>COOLMOVIE</h3>
+        <a href="/">Contact Us</a>
+        <br />
+        <a href="/">About Us</a>
+        <br />
 
         <a href="https://www.themoviedb.org/">
           {" "}
-          {/* <img src={tmdb} width="64px" alt="logoTMDB" /> */}
           Our API
-        </a><br/>
-        <a href="/">About Us</a><br/>
-        <a href="/">Contact Us</a>
-        
+        </a>
+      </div>
+      <div className="center">
+        <a href="/">
+          <img src={logoB} width="200px" alt="logo" />
+        </a>
       </div>
       <div className="rightSideFooter">
-        <a href="/">
-          <img src={logoB} width="150px" alt="logo" />
-        </a>
         <div className="developerInfo">
           <div className="devName">
             <p>Designer & Developer:</p>

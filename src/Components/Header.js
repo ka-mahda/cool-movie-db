@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useContext} from "react";
 import HeaderStyle from "../Styles/HeaderStyle";
 import logo from "../Assets/LogoSite/logo.png";
-import ColorLensOutlinedIcon from "@mui/icons-material/ColorLensOutlined";
+// import ColorLensOutlinedIcon from "@mui/icons-material/ColorLensOutlined";
 import WidgetsRoundedIcon from "@mui/icons-material/WidgetsRounded";
+import { ThemeContext } from "../Theme";
 
 export default function Header() {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   return (
     <HeaderStyle>
       <div className="leftSideHeader">
@@ -13,20 +15,12 @@ export default function Header() {
         </a>
       </div>
       <div className="rightSideHeader">
-        <div className="paletteMode">
-          <ColorLensOutlinedIcon
-            sx={{ width: "42px", height: "42px", color: "#66fcf1" }}
-          />
-
-          <select name="themeSelect" id="themeSelect">
-            <option value="cool">cool</option>
-            <option value="snow">snow</option>
-            <option value="sleek">sleek</option>
-          </select>
+        <div className="header-toggle-buttons">
+          <button onClick={() => toggleTheme()}>{theme}</button>
         </div>
         <div className="assortment">
           <WidgetsRoundedIcon
-            sx={{ width: "42px", height: "42px", color: "#66fcf1" }}
+            sx={{ width: "42px", height: "42px", color:"var(--text-color)" }}
           />
           <div className="assortmentList active"></div>
         </div>

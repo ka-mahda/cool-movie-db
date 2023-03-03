@@ -6,7 +6,6 @@ const baseApiUrl = "https://api.themoviedb.org/3";
 
 // urls movie
 const popularMovie = `${baseApiUrl}/movie/popular?api_key=${apiKey}&language=en-US`;
-const upcomingMovie = `${baseApiUrl}/movie/upcoming?api_key=${apiKey}&language=en-US`;
 const topRatedMovie=`${baseApiUrl}/movie/top_rated?api_key=${apiKey}&language=en-US`;
 const nowPlayingMovie=`${baseApiUrl}/movie/now_playing?api_key=${apiKey}&language=en-US`;
 const latestMovie=`${baseApiUrl}/movie/latest?api_key=${apiKey}&language=en-US`;
@@ -39,7 +38,6 @@ export {
   latestMovie,
   trendingMovie,
   popularTV,
-  upcomingMovie,
   onAirTV,
   latestTV,
   topRatedTV,
@@ -47,5 +45,5 @@ export {
   generalProfilePath,
   generalBdPath,
   generalLogoPath,
-  generalStillPath,
+  generalStillPath
 };

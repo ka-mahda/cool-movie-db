@@ -59,7 +59,6 @@ export default function MovieSliderCarousel(props) {
           slidesPerView={4}
           spaceBetween={0}
           loop={true}
-    
           navigation={true}
           pagination={{
             dynamicBullets: true,
@@ -68,6 +67,21 @@ export default function MovieSliderCarousel(props) {
             watchState: true,
           }}
           className="mySwiper"
+         
+            breakpoints= {{
+              360: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+              },
+            }}
         >
           
             {availibilityDataRecieved && data.results.map((movie) => {

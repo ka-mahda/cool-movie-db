@@ -34,6 +34,20 @@ export default function TVSliderCarousel(props) {
             watchState: true,
           }}
           className="mySwiper"
+          breakpoints= {{
+            360: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+          }}
         >
           {availibilityDataRecieved &&
             data.results.map((tv) => {

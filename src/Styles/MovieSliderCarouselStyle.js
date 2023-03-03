@@ -47,11 +47,11 @@ flex-direction:column;
 }
 
 .swiper-container .swiper-button-prev{
-left:0px;
+left:-18px;
 right:auto;
 }
 .swiper-container .swiper-button-next{
-  right:0px;
+  right:-19px;
   left:auto;
 }
 
@@ -64,9 +64,7 @@ right:auto;
   background:var(--text-color);
 }
 
-
-
-
+}
 `;
 
 export default MovieSliderCarouselStyle;

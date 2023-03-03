@@ -117,14 +117,22 @@ let ActorBiographyStyle = styled.section`
     font-family: Rubik, cursive;
     font-size: 2rem;
     text-align: center;
-    color: #66fcf1;
+    color: var(--text-color);
     padding:2rem 0;
   }
   .actorFilmography .filmographyCard{
     display:flex;
     justify-content:space-evenly;
-    flex-wrap: wrap;
-      
+    flex-wrap: wrap;  
+  }
+
+  @media only screen and (max-width: 448px) {
+    .actorInfo{
+      flex-direction:column;
+    }
+    .actorInfo .actorBio{
+      margin:1rem;
+    }
   }
 `;
 

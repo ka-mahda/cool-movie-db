@@ -3,7 +3,7 @@ import styled from 'styled-components';
 let MovieSliderCarouselStyle = styled.section`
 width : 100%;
 height : 800px;
-background-color: #1f2833;
+background-color: var(--bg-color);
 margin: 0px;
 padding:0px 16px;
 display:flex;
@@ -15,7 +15,7 @@ flex-direction:column;
   font-family: 'Rubik Dirt', cursive;
     font-size: 2rem;
     text-align: center;
-    color:#66fcf1;
+    color:var(--text-color);
 }
 .swiper-container{
   padding:0px 40px 0px;
@@ -40,7 +40,7 @@ flex-direction:column;
 
 .swiper-container .swiper-button-prev,
 .swiper-container .swiper-button-next {
-  color: #66fcf1;
+  color: var(--border-color);
   width: 60px !important;
   height: 100px !important;
   top:138px;
@@ -57,11 +57,11 @@ right:auto;
 
 
 .swiper-pagination-bullet {
-  background:#fff;
+  background:var(--overview-color);
 }
 
 .swiper-pagination-bullet-active{
-  background:#66fcf1;
+  background:var(--text-color);
 }
 
 

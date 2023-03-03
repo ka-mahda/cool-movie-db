@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 let MovieDetailStyle = styled.section` 
     width : 100%;
-    background-color:#1f2833;
+    background-color:var(--bg-color);
     margin: 0px;
     padding: 1rem 1.5rem;
     display:flex;
@@ -20,12 +20,12 @@ width: 100%;
 }
 .detailBoxSection .titleOfDetails h3{
    margin-right:1rem; 
-   color:#66fcf1;
+   color:var(--text-color);
    font-size:1.25rem;
    font-weight:300;
 }
 .detailBoxSection .titleOfDetails .line{
-    border-bottom: 1.25px solid #66fcf1;
+    border-bottom: 1.25px solid var(--border-color);
     flex-grow:1;
 }
 .showingDetails{
@@ -39,7 +39,7 @@ width: 100%;
 .showingDetails .splitter{
     padding:1rem;
     padding-left:1rem;
-    border-right: 3px solid #66fcf1;
+    border-right: 3px solid var(--border-color);
 }
 .showingDetails .posterMovie{
     max-width: 200px;

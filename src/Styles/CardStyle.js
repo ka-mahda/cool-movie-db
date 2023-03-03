@@ -31,7 +31,7 @@ position:relative
   .posterNameMovie img {
     transition: 0.6s;
     border-radius: 50%;
-    border: 8px solid #66fcf1;
+    border: 8px solid var(--border-color);
     z-index: 10;
     overflow: hidden;
     width: 180px;
@@ -41,7 +41,7 @@ position:relative
   .posterNameMovie h4 {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #66fcf1;
+    color: var(--text-color);
     text-align: center;
     margin-top: 1rem;
   }
@@ -76,7 +76,7 @@ position:relative
   .overview p {
     font-size: 0.8rem;
     font-weight: 400;
-    color: #fff;
+    color: var(--overview-color);
     text-align: justify;
     text-justify: inter-character;
     display: -webkit-box;

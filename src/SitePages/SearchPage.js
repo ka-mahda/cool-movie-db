@@ -37,10 +37,10 @@ export default function ResultOfSearch() {
                     key={resultSearch.id}
                     title={resultSearch.title || resultSearch.name}
                     overview={resultSearch.overview}
-                    rating={resultSearch.vote_average + "/10"}
+                    rating={Number(resultSearch.vote_average).toFixed(1)}
                     poster={resultSearch.poster_path}
-                    //genreOne={resultSearch?.genre_ids[0]}
-                    //genreTwo={resultSearch?.genre_ids[1]}
+                    genreOne={resultSearch.genre_ids[0]}
+                    genreTwo={resultSearch.genre_ids[1]}
                     group={resultSearch.media_type === "movie" ? "movie" : "tv"}
                     category={
                       resultSearch.media_type === "movie" ? "movie" : "tv"
@@ -69,7 +69,7 @@ export default function ResultOfSearch() {
                   color: "#1f2833",
                 },
                 ["& .css-rppfq7-MuiButtonBase-root-MuiPaginationItem-root,.MuiPaginationItem-page,.MuiPaginationItem-page,.css-1scal0h-MuiPaginationItem-root"]: {
-                  color: "white",
+                  color: "var(--overview-color)",
                 },
               }}
               showFirstButton

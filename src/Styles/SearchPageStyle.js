@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 let SearchPageStyle = styled.div`
   width: 100%;
-  background-color: #1f2833;
+  background-color: var(--bg-color);
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -21,7 +21,7 @@ let SearchPageStyle = styled.div`
     font-family: "Rubik Dirt", cursive;
     font-size: 1.75rem;
     text-align: center;
-    color: #66fcf1;
+    color: var(--text-color);
   }
   .searchResultContainer .searchCardContainer {
     display: flex;

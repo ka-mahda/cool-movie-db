@@ -6,19 +6,21 @@ let ActorBiographyStyle = styled.section`
   justify-content: space-between;
   align-items: center;
   padding: 0 20px 20px;
+  background:var(--bg-color);
+  border-top: 2px solid var(--border-color);
 
   .titleNameOfActor h2{
     font-family: Rubik, cursive;
     font-size: 2rem;
     text-align: center;
-    color: #66fcf1;
+    color: var(--text-color);
     padding:2rem 0;
   }
   .titleNameOfActor h2 span {
     font-family: "Rubik Dirt", cursive;
     font-size: 2rem;
     text-align: center;
-    color: #66fcf1;
+    color:var(--text-color);
     padding:2rem 0;
   }
   .actorInfo {
@@ -74,6 +76,7 @@ let ActorBiographyStyle = styled.section`
   .actorInfo .actorData ul li h5{
     font-size: 1rem;
     margin:0;
+    color: var(--overview-color);
   }
 
   .actorInfo .actorData ul li span{
@@ -101,7 +104,7 @@ let ActorBiographyStyle = styled.section`
     overflow:auto;
     font-family: Rubik, cursive;
     font-size: 1rem;
-    color: #c5c6c7;
+    color:  var(--overview-color);
     text-align:justify;
     padding:1.5rem;
     padding:top:0;

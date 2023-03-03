@@ -43,7 +43,6 @@ export default function Hero(props) {
           <Search />
         </div>
       </div>
-     
       <div className="trending">
         <Swiper
           spaceBetween={30}

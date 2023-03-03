@@ -77,14 +77,3 @@ export default function DetailMoviePage() {
   );
 }
 
-// <section data-v-71cd868e="" class="background">
-//   <main data-v-71cd868e="" class="main-content-single">
-//     <div data-v-71cd868e="" class="gradient"></div>
-//     <img
-//       data-v-71cd868e=""
-//       src="https://cdn.30nama.com/cover/30155636_30NAMA.webp?1675922980"
-//       class="img loaded"
-//     />
-//   </main>
-//   <div data-v-71cd868e="" class="fav"></div>
-// </section>

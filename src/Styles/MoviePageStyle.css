@@ -19,7 +19,7 @@
   position: absolute;
   flex-direction: column;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, #0a0d10 30%, rgba(10, 13, 16, 0));
@@ -75,16 +75,74 @@
   justify-content: flex-start;
   align-items: center;
 }
-.backdropSection .gradientLayer .timeAndScore .score{
+.backdropSection .gradientLayer .timeAndScore .score {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 3rem;
 }
 
-.backdropSection .gradientLayer .timeAndScore .runtime{
+.backdropSection .gradientLayer .timeAndScore .runtime {
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
+
+
+@media only screen and (max-width: 1024px) {
+  .backdropSection .gradientLayer h2 {
+    font-size: 40px;
+  }
+  .backdropSection .gradientLayer h2,
+  .backdropSection .gradientLayer .genres,
+  .backdropSection .gradientLayer .tagline,
+  .backdropSection .gradientLayer .overview,
+  .backdropSection .gradientLayer .overview .timeAndScore {
+    width: 45%;
+  }
+   .score{
+    margin-left: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .backdropSection .gradientLayer h2 {
+    font-size: 32px;
+  }
+  .backdropSection .gradientLayer h2,
+  .backdropSection .gradientLayer .genres,
+  .backdropSection .gradientLayer .tagline,
+  .backdropSection .gradientLayer .overview,
+  .backdropSection .gradientLayer  .timeAndScore {
+    width: 45%;
+  }
+  .backdropSection .gradientLayer .timeAndScore{
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .backdropSection .gradientLayer .timeAndScore .score{
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 448px) {
+  .backdropSection .gradientLayer h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .backdropSection .gradientLayer h2,
+  .backdropSection .gradientLayer .genres,
+  .backdropSection .gradientLayer .tagline,
+  .backdropSection .gradientLayer .overview,
+  .backdropSection .gradientLayer  .timeAndScore {
+    width: 92%;
+  }
+  .backdropSection .gradientLayer .timeAndScore{
+    align-items: center;
+    flex-direction: column;
+  }
+  .backdropSection .gradientLayer .timeAndScore .score{
+    margin-left: 0 !important;
+  }
+}
+

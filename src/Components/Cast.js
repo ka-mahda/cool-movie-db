@@ -11,7 +11,6 @@ export default function Cast(props) {
   let availibilityDataRecieved = !loading && !error && !!data;
   if (loading) return <CircularProgress />;
   if (error) return <Alert severity="error">{error}</Alert>;
-console.log(url)
   return (
     availibilityDataRecieved &&
     data.cast.slice(0, 6).map((actor) => {

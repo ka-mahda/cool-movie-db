@@ -61,6 +61,10 @@ align-items: center;
     color:#45a29e;
     text-align:left; 
 }
+@media only screen and (max-width: 448px) {
+   .center{
+    display:none;
+   }
 
 `;
 

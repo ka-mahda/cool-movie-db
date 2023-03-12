@@ -16,9 +16,7 @@ position:relative
 
   :hover {
     background-color: rgba(69, 162, 158, 0.35);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-    backdrop-filter: blur(15px);
   }
 
   .posterNameMovie {

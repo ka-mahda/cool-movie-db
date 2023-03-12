@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 let FooterStyle = styled.footer`
 width : 100%;
-height : 200px;
+height : 180px;
 background-color:#66fcf1;
 margin: 0px;
 padding: 0 24px;
@@ -55,7 +55,7 @@ align-items: center;
     margin-bottom:1rem;
     font-weight:bold; 
 }
-.leftSideFooter a{
+.leftSideFooter a, .leftSideFooter Button{
     font-size:1rem;
     font-weight:600; 
     color:#45a29e;

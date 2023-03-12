@@ -1,0 +1,87 @@
+.modalSection{
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 80%;
+}
+.titleOfModalAbout {
+  color: #66fcf1;
+  text-align: center;
+}
+.titleOfModalAbout h2 {
+  margin-bottom: 1rem;
+}
+.ourMission h3 {
+  color: #66fcf1;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.ourMission p {
+  text-align: center;
+  color: #66fcf1;
+  margin-top:1rem;
+}
+.ourTeam h4 {
+  color: #66fcf1;
+  text-align: center;
+  margin-top: 2rem;
+}
+.teamCard {
+  background-color: #c5c6c7;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  margin: 1rem auto;
+  width: 50%;
+}
+.teamCard h4 {
+  color: #66fcf1;
+  text-align: center;
+  margin: 0;
+}
+.teamCard h5 {
+  color: #66fcf1;
+  text-align: center;
+  margin: 0;
+}
+
+.lastSentence {
+  color: #66fcf1;
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+    h2{
+        font-size: 20px !important;
+    }
+    h3{
+        font-size: 17px !important;
+    }
+    p,h4{
+        font-size: 14px !important;
+    }
+    h5{
+        font-size: 12px !important;
+    }
+
+}
+@media only screen and (max-width: 448px) {
+    h2{
+        font-size: 18px !important;
+    }
+    h3{
+        font-size: 16px !important;
+    }
+    p,h4{
+        font-size: 12px !important;
+    }
+    h5{
+        font-size: 10px !important;
+    }
+    .teamCard{
+        width:70%;
+    }
+}

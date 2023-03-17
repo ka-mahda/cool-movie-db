@@ -36,11 +36,11 @@ export default function ModalAbout() {
                 </div>
                 <div className="teamCard">
                   <h4>Mojtaba Esparipour</h4>
-                  <h5>Coach</h5>
+                  <h5>teacher</h5>
                 </div>
               </section>
               <section className="lastSentence">
-                It's not just what we do, it's how we do it!!!
+                It's not just what we do, it's about how we do it!!!
               </section>
             </div>
       

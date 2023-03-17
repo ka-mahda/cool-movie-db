@@ -24,7 +24,7 @@ export default function Hero(props) {
       <div className="description">
         <div className="bg"></div>
         <div className="bg bg2"></div>
-        <div classNames="bg bg3"></div>
+        <div className="bg bg3"></div>
         <div className="content">
           <h1>
             Thousands of Titles

@@ -39,8 +39,8 @@ export default function ResultOfSearch() {
                     overview={resultSearch.overview}
                     rating={Number(resultSearch.vote_average).toFixed(1)}
                     poster={resultSearch.poster_path}
-                    genreOne={resultSearch.genre_ids[0]}
-                    genreTwo={resultSearch.genre_ids[1]}
+                    genreOne={resultSearch.genre_ids?resultSearch.genre_ids[0]:""}
+                    genreTwo={resultSearch.genre_ids?resultSearch.genre_ids[1]:""}
                     group={resultSearch.media_type === "movie" ? "movie" : "tv"}
                     category={
                       resultSearch.media_type === "movie" ? "movie" : "tv"

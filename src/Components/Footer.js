@@ -44,7 +44,7 @@ export default function Footer() {
            <ModalAbout/>
           </Box>
         </Modal>
-        <a href="https://developers.themoviedb.org/3/getting-started/introduction">
+        <a  target={"_blank"} href="https://developers.themoviedb.org/3/getting-started/introduction">
           {" "}
           OUR API
         </a>

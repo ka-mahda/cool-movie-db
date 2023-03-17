@@ -10,25 +10,22 @@ display:flex;
 justify-content: space-between;
 align-items: center;
 
- .rightSideHeader{
+ .leftSideHeader{
     display:flex;
     justify-content: space-between;
     align-items: center;
 }
-.rightSideHeader .header-toggle-buttons button{
+.leftSideHeader .header-toggle-buttons button{
   background:transparent;
   border:2px solid var(--text-color);
   color:var(--text-color);
-  margin-right:1rem;
+  margin-left:1rem;
   font-size:1.15rem;
   border-radius:0.5rem;
 }
- 
-.rightSideHeader .assortment{
-   display:flex; 
-   justify-content:center;
-   align-items: center;
-}
+ .leftSideHeader div.MuiBox-root.css-1n3h4wo{
+  background:yellow !important;
+ }
 `;
 
 

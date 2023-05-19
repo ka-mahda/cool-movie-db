@@ -53,7 +53,7 @@ In the footer section, in addition to placing the ways of contact with me, you c
 -react router dom
 
 ## Designer and developer
-[Mahda Kazmei]
+[Mahda Kazemi]
 
 ## Contact with me
 (mailto: mahdakazemi1996@gmail.com)
